@@ -8,7 +8,7 @@ class x9(object):
                  url: str,
                  wordlist_path: str,
                  chunk: int) -> None:
-        self.values = ("'testinquiz'","\"voorivexinjected\"","<b/voorivexinjected")
+        self.values = ("'voorivexinjected'","\"voorivexinjected\"","<b/voorivexinjected")
         self.url = url
         self.wl = wordlist_path
         self.chunk = chunk
