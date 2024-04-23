@@ -41,6 +41,7 @@ class x9(object):
         if parsed.query:
             _and = "&" #This is how bad i am as a programmer lol
         words = []
+        urls = []
         with open(self.wl) as file:
             for chunk_number in range(1):
                 for value in self.values:
@@ -49,7 +50,10 @@ class x9(object):
                         words.append(f"{word}={value}")
                         if len(words) == self.chunk:# or block.index(word)==block[-1]:
                             parsed2 = parsed._replace(query=f"{parsed.query}{_and}{'&'.join(words)}").geturl()
-                            print(f"{parsed2}\n")
+                            urls.append(parsed2)
+                            if len(urls) == 20:
+                                print("\n".join(urls), flush=True)
+                                urls=[]
                             words=[]
 
 
