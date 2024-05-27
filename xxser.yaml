@@ -1,0 +1,37 @@
+id: auto_xss
+
+info:
+    name: Yashar Sh.
+    author: Voorivex
+    severity: medium
+    description: matcher for xss in parameters
+    tags: xss
+    metadata:
+        max-request: 5
+
+http:
+    - method: GET
+      path:
+        - '{{BaseURL}}'
+      matchers-condition: or
+      matchers:
+        - type: word
+          part: body
+          words:
+            - <b>voorivexinjected
+        - type: word
+          part: body
+          words:
+            - <b/voorivexinjected
+        - type: word
+          part: body
+          words:
+            - '"voorivexinjected""'
+        - type: word
+          part: body
+          words:
+            - "'voorivexinjected'"
+        - type: word
+          part: body
+          words:
+            - "voorivexinjected"
