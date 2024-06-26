@@ -8,12 +8,12 @@ python3 main.py -l [URL LIST] -w [PARAMETERS WORDLIST] -gs [append - combine - r
 
 help attributes:
 
-  - debug disable silent mode for Nuclei
-  - l list of urls
-  - w Specify the wordlist
-  - wb [Get Wayback Data] (NOT WORKING YET)
-  - m Specify number of chunks. Default: 150
-  - gs Combining parameter format: combine - append - replace - all
-  - t Specify number of Threads. Default: 10
-  - tc Specify number of chunks for each temp file. Default: 10000
+  - -debug disable silent mode for Nuclei
+  - -l list of urls
+  - -w Specify the wordlist
+  - -wb [Get Wayback Data] (NOT WORKING YET)
+  - -m Specify number of chunks. Default: 150
+  - -gs Combining parameter format: combine - append - replace - all
+  - -t Specify number of Threads. Default: 10
+  - -tc Specify number of chunks for each temp file. Default: 10000
 
