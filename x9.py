@@ -9,7 +9,7 @@ class x9(object):
                  wordlist_path: str,
                  chunk: int,
                  tempfile: str = "/tmp/tmp_wl.txt",
-                 template:str = "~/SECTOOLS/nucleitemps/xxs_template.yaml",
+                 template:str = "xxs_template.yaml",
                  temp_chunk: int = 1000) -> None:
         self.values = ("'voorivexinjected'","\"voorivexinjected\"","<b/voorivexinjected")
         self.template = template
@@ -22,6 +22,7 @@ class x9(object):
     def nuclei(self):
         with open(self.tempfile,'r') as file:
             cwd = os.getcwd()
+            self.template = os.path.join(os.getcwd(),self.template)
             _list = os.path.join(cwd,self.tempfile)
             subprocess.check_output(["./nuclear.sh",_list,os.path.expanduser(self.template)],text=True)#.stdout.decode('utf-8')
 
