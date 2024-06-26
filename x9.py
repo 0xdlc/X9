@@ -9,7 +9,7 @@ class x9(object):
                  wordlist_path: str,
                  chunk: int,
                  tempfile: str = "/tmp/tmp_wl.txt",
-                 template:str = "~/SECTOOLS/nucleitemps/xxser.yaml",
+                 template:str = "~/SECTOOLS/nucleitemps/xxs_template.yaml",
                  temp_chunk: int = 1000) -> None:
         self.values = ("'voorivexinjected'","\"voorivexinjected\"","<b/voorivexinjected")
         self.template = template
