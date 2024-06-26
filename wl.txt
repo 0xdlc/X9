@@ -1,7 +1,0 @@
-this
-p11
-parameters
-are
-random
-af
-
