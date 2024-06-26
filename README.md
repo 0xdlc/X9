@@ -7,6 +7,7 @@ Usage:
 python3 main.py -l [URL LIST] -w [PARAMETERS WORDLIST] -gs [append - combine - replace]
 
 help attributes:
+
   -debug disable silent mode for Nuclei
   -l list of urls
   -w Specify the wordlist
