@@ -1,0 +1,3 @@
+https://brutelogic.com.br/gym.php?Donttouch=NoTouch
+https://brutelogic.com.br/gym.php?Donttouch1=NoTouch&MeNoTouch=test
+
