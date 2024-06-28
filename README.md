@@ -4,9 +4,10 @@ X9 is an automated xss discovery tool.
 - x9 will use nuclei and the custom template to look for xss sinks inside the DOM.
 
 Usage:
+
 Install Nuclei: https://github.com/projectdiscovery/nuclei
 
-python3 main.py -l [URL LIST] -w [PARAMETERS WORDLIST] -gs [append - combine - replace]
+`python3 main.py -l [URL LIST] -w [PARAMETERS WORDLIST] -gs [append - combine - replace]`
 
 help attributes:
 
