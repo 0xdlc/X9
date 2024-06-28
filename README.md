@@ -5,6 +5,7 @@ X9 is an automated xss discovery tool.
 
 Usage:
 Install Nuclei: https://github.com/projectdiscovery/nuclei
+
 python3 main.py -l [URL LIST] -w [PARAMETERS WORDLIST] -gs [append - combine - replace]
 
 help attributes:
