@@ -1,0 +1,37 @@
+id: auto_xss
+
+info:
+    name: Mo.
+    author: 0xdlc
+    severity: medium
+    description: matcher for xss in parameters
+    tags: xss
+    metadata:
+        max-request: 5
+
+http:
+    - method: GET
+      path:
+        - '{{BaseURL}}'
+      matchers-condition: or
+      matchers:
+        - type: word
+          part: body
+          words:
+            - <b>testinquiz
+        - type: word
+          part: body
+          words:
+            - <b/testinquiz
+        - type: word
+          part: body
+          words:
+            - '"testinquiz""'
+        - type: word
+          part: body
+          words:
+            - "'testinquiz'"
+        - type: word
+          part: body
+          words:
+            - "testinqzui"
